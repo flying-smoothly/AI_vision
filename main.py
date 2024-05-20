@@ -1,7 +1,8 @@
 import pandas as pd
-
 fifa2019=pd.read_csv('fifa2019.csv')
-korea_player=fifa2019['Nationality']=='Korea Republic'
-sub5=fifa2019.loc[korea_player]
-sub6=sub5['Name']
-print(sub6)
+print(fifa2019.shape)
+import matplotlib.pyplot as plt
+
+fifa2019['Preferred Foot'].value_counts().plot(kind='bar')
+plt.legend()
+plt.show()
