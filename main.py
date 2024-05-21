@@ -7,6 +7,6 @@ sub1=job.loc[electronic_engineering]
 
 import matplotlib.pyplot as plt
 
-sub1['company distinguish'].value_counts().plot(kind='pie',autopct='%1.f%%')
+sub1['Details of employment classification'].value_counts().plot(kind='pie',autopct='%1.f%%')
 plt.legend()
 plt.show()
