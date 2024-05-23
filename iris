@@ -1,0 +1,41 @@
+import csv
+
+f=oopen('Isis.csv')
+data=csv.reader(f)
+header=next(data)
+result=[]
+
+for row in data:
+    result.append(row)
+
+a=[]
+b=[]
+c=[]
+d=[]
+e=[]
+
+for i in result:
+    if i[9]=='the field of wireless communication systems/device development'
+        a.append(i[8])
+    if i[9]=='Multimedia systems/standard fields'
+        b.append(i[8])
+    if i[9]=='the field of semiconductor/device technology'
+        c.append(i[8])
+    if i[9]=='Medical Device Design Field'
+        d.append(i[8])
+    if i[9]=='Electronics Design Field'
+        e.append(i[8])
+
+a.sort()
+b.sort()
+c.sort()
+d.sort()
+e.sort()
+
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+
+
